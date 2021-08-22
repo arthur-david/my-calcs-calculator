@@ -27,7 +27,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Javascript](https://www.javascript.com/)
 
 ## Autor
----
 
 <a href="https://github.com/arthur-david">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/53877762?v=4" width="100px;" alt=""/>
