@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(239,239,240);
+    background: linear-gradient(175deg, rgba(239,239,240,1) 0%, rgba(236,237,242,1) 38%, rgba(239,239,255,1) 70%, rgba(239,239,240,1) 100%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #001242;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.2);
+}
+
+header .titulo-principal a {
+    color: rgb(239,239,240);
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+header .titulo-principal a:hover {
+    color: rgb(160, 160, 207);
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+article > div {
+    width: 400px;
+    height: 470px;
+    border: 5px solid #001242;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#visor {
+    height: 90px;
+    border-radius: 24px 24px 0 0;
+    background-color: rgb(160, 160, 207);
+    border-bottom: 3px solid #6184D8;
+    color: #434371;
+    font-weight: 600;
+}
+
+#visor #data {
+    width: 100%;
+    height: 20px;
+    padding: 2px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#visor .baixo {
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+}
+
+#visor .baixo #opr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    font-size: 35px;
+}
+
+#visor .baixo .dir {
+    width: 330px;
+}
+
+#visor .baixo .dir #historic {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20px;
+    width: inherit;
+    padding: 0 10px 0 0;
+    font-size: 15px;
+    color: #585885;
+}
+
+#visor .baixo .dir #last-num {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 37px;
+    width: inherit;
+    padding: 0 10px 0 0;
+    font-size: 35px;
+}
+
+.buttons {
+    height: 370px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    background-color: #e3ebff;
+    border-radius: 0 0 24px 24px;
+}
+
+.buttons > .button {
+    padding: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,18,66,0.2);
+    font-size: 20px;
+}
+
+.buttons .inicio {
+    border-top: none;
+}
+
+.buttons .final {
+    border-bottom: none;
+}
+
+.buttons .final-d {
+    border-bottom-right-radius: 24px;
+}
+
+.buttons .final-e {
+    border-bottom-left-radius: 24px;
+}
+
+.buttons .lateral-d {
+    border-right: none;
+}
+
+.buttons .lateral-e {
+    border-left: none;
+}
+
+.diff {
+    background-color: #FF5964;
+    color: #e3ebff;
+    transition: background-color 0.2s;
+}
+
+.diff:hover {
+    background-color: rgba(255, 89, 100, 0.8);
+}
+
+.diff:active {
+    background-color: rgba(255, 89, 100, 0.5);
+}
+
+.plus {
+    grid-area: 4 / 4 / 6 / 5;
+    background-color: #0CCE6B;
+    color: #e3ebff;
+    transition: background-color 0.2s;
+}
+
+.plus:hover {
+    background-color: rgba(12, 206, 107, 0.8);
+}
+
+.plus:active {
+    background-color: rgba(12, 206, 107, 0.5);
+}
+
+.plus p {
+    font-size: 50px;
+}
+
+.negrito {
+    font-weight: 700;
+}
+
+.hover-normal {
+    transition: background-color 0.2s;
+}
+
+.hover-normal:hover {
+    background-color:rgba(160, 160, 207, 0.2);
+}
+
+.hover-normal:active {
+    background-color:rgba(160, 160, 207, 0.5);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+
+@media (max-width: 414px) {
+    header .titulo-principal a {
+        font-size: 25px;
+    }
+
+    article > div {
+        width: 300px;
+    }
+
+    #visor .baixo #opr {
+        width: 30px;
+    }
+
+    #visor .baixo .dir {
+        width: 240px;
+    }
+}

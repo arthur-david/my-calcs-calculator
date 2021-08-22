@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>My Calcs - Calculator</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo-principal"><a href="index.html">My Calcs - Calculator</a></h1>
+    </header>
+    <article>
+        <div>
+            <section id="visor">
+                <div id="data"></div>
+                <div class="baixo">
+                    <div id="opr"></div>
+                    <div class="dir">
+                        <div id="historic"></div>
+                        <div id="last-num">0</div>
+                    </div>
+                </div>
+            </section>
+            <section class="buttons">
+                <div class="button inicio diff lateral-e negrito noselect">AC</div>
+                <div class="button inicio diff negrito noselect">CE</div>
+                <div class="button inicio negrito hover-normal noselect">%</div>
+                <div class="button inicio lateral-d negrito hover-normal noselect">/</div>
+                <div class="button lateral-e hover-normal noselect">7</div>
+                <div class="button hover-normal noselect">8</div>
+                <div class="button hover-normal noselect">9</div>
+                <div class="button lateral-d negrito hover-normal noselect">*</div>
+                <div class="button lateral-e hover-normal noselect">4</div>
+                <div class="button hover-normal noselect">5</div>
+                <div class="button hover-normal noselect">6</div>
+                <div class="button lateral-d negrito hover-normal noselect">-</div>
+                <div class="button lateral-e hover-normal noselect">1</div>
+                <div class="button hover-normal noselect">2</div>
+                <div class="button hover-normal noselect">3</div>
+                <div class="button final final-d lateral-d plus negrito noselect"><p>+</p></div>
+                <div class="button final final-e lateral-e hover-normal noselect">0</div>
+                <div class="button final negrito hover-normal noselect">.</div>
+                <div class="button final negrito hover-normal noselect">=</div>
+            </section>
+        </div>
+    </article>
+    <script src="scripts/controllers/CalcController.js"></script>
+    <script src="scripts/calculator.js"></script>
+</body>
+</html>
